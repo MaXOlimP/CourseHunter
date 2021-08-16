@@ -1,29 +1,22 @@
-let block = 3;
-console.log(block);
-const leftBorderWidth = 1;
+let numberOfFilms ;
+let howMuch = prompt("Сколько фильмов вы уже посмотрел?");
+numberOfFilms = howMuch;
 
-block = 15;
 
-console.log(block); 
-const obj = {
-    name: 'John',
-    age: 25,
-    isMarried: false
+let objectA = {};
+let genresTab = [];
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: objectA,
+    genres: genresTab,
+    private: false
 };
 
+const a = prompt("One of the last see a films?"),
+    b = prompt("How you rate this?"),
+    c = prompt("One of the last see a films?"),
+    d = prompt("How you rate this?");
 
-console.log(obj.name);
-
-const category = 'toys';
-
-console.log(`http://someurl.com/${category}/5`);
-
-let incr = 10,
-    decr = 10;
-
-// ++incr;
-// --decr;
-
-console.log(++incr);
-
-console.log(--decr);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;

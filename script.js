@@ -20,3 +20,9 @@ const a = prompt("One of the last see a films?"),
 
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
+
+function newCheck(){
+    let a = 10;
+    const b = 100;
+
+};

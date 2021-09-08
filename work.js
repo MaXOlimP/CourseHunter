@@ -1,19 +1,19 @@
-// const arr = [1, 2, 3, 4, 5, 7, 8, 9, 9, 6, 7 ,54, 65, 756 , 765];
+const arr = [1, 2, 3, 4, 5, 7, 8, 9, 9, 6, 7 ,54, 65, 756 , 765];
 
-// arr.forEach(function(item, i, arr){
-//     console.log(`${i}: ${item} внутри массива ${arr}`);
-// });
+arr.forEach(function(item, i, arr){
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+});
 
-// for(let i=0; i < arr.length; i++){
-//     console.log(arr[i]);
-// }
+for(let i=0; i < arr.length; i++){
+    console.log(arr[i]);
+}
 
-// for(let value of arr){
-//     console.log(value);
-// }
-// const str = prompt("get contact", "");
-// const product = str.split(", ");
-// console.log(product.join(';'));
+for(let value of arr){
+    console.log(value);
+}
+const str = prompt("get contact", "");
+const product = str.split(", ");
+console.log(product.join(';'));
 
 let a = 5,
     b = a;
@@ -21,16 +21,16 @@ b = b + 5;
 console.log(b);
 console.log(a);
 
-// const obj ={
-//     a: 5,
-//     b: 1
-// };
+const obj ={
+    a: 5,
+    b: 1
+};
 
-// const copy = obj;
-// copy.a = 10;
+const copy2 = obj;
+copy.a = 10;
 
-// console.log(copy);
-// console.log(obj);
+console.log(copy2);
+console.log(obj);
 
 function copy(mainObj){
     let objCopy = {};
@@ -56,5 +56,48 @@ const newNumbers = copy(numbers);
 
 newNumbers.a = 10;
 newNumbers.c.x = 10;
-console.log(newNumbers);
-console.log(numbers);
+
+// console.log(newNumbers);
+// console.log(numbers);
+
+const add = {
+    d: 17,
+    e: 20
+};
+
+const clone = Object.assign({}, add);
+
+clone.d=20;
+
+console.log(add);
+console.log(clone);
+
+const oldArray = ['a','b','c'];
+const newArray = oldArray.slice();
+
+newArray[0] = 'sad';
+console.log(newArray);
+console.log(oldArray);
+
+const video = ['youtube', 'vimeo', 'rutube'],
+    blogs = ['wordpress', 'livejournal', 'blogger'],
+    internet = [...video, ...blogs, 'vk', 'facebook'];
+console.log(internet);
+
+function log(a, b, c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+const num = [2,5,7];
+log(...num);
+
+const array = ["a", "b"];
+
+const newAarray = [...array];
+
+const q ={
+    one: 1,
+    two: 2
+};

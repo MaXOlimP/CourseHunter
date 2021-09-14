@@ -98,6 +98,23 @@ const array = ["a", "b"];
 const newAarray = [...array];
 
 const q ={
-    one: 1,
+    one: 3.52,
     two: 2
+};  
+
+const solider ={
+    health: 400,
+    armor: 100,
+    sayHello: function(){
+        console.log("Hello");
+    }
 };
+
+
+const jonh ={
+    health: 100
+};
+
+Object.setPrototypeOf(jonh,solider);
+
+jonh.sayHello();

@@ -118,3 +118,14 @@
 // Object.setPrototypeOf(jonh,solider);
 
 // jonh.sayHello();
+
+const box = document.getElementById('box');
+console.log(box);
+
+const button = document.getElementsByTagName('button');
+console.log(button[1]);
+
+const div = document.createElement('div');
+// const text = document.createTextNode('this is text');
+div.classList.add('black');
+document.body.append(div);
